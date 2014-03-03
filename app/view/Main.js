@@ -6,11 +6,12 @@ Ext.define('CustomDataview.view.Main', {
     ],
     config: {
         scrollable: true,
+        cls: 'main',
         name: 'main_container',
         items: [{
-                xtype: 'toolbar',
-                title: 'Dataview without parent page scrolling',
-                cls: 'title'
+            xtype: 'toolbar',
+            title: 'Dataview without parent page scrolling',
+            height: 25
         }, {
             xtype: 'customdataview',
             height: 200,
@@ -18,35 +19,18 @@ Ext.define('CustomDataview.view.Main', {
             selectedCls: 'change-background',
             name: 'custom_dataview',
             itemTpl: '{text}',
-            data: [{
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }, {
-                text: "Custom Dataview"
-            }]
+            data: (function(){
+                var count, data = [];
+                for(count = 1; count <=25; count++) {
+                    data.push({text: "Custom Dataview"});
+                }
+                return data;
+            })()
+            
         }, {
-                xtype: 'toolbar',
-                title: 'Dataview with parent page scrolling',
-                cls: 'title'
+            xtype: 'toolbar',
+            title: 'Dataview with parent page scrolling',
+            height: 25
         }, {
             xtype: 'dataview',
             height: 200,
@@ -54,31 +38,13 @@ Ext.define('CustomDataview.view.Main', {
             selectedCls: 'change-background',
             name: 'lorem_dataview',
             itemTpl: '{text}',
-            data: [{
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }, {
-                text: "Sencha Dataview"
-            }]
+            data: (function(){
+                var count, data = [];
+                for(count = 1; count <=25; count++) {
+                    data.push({text: "Sencha Dataview"});
+                }
+                return data;
+            })()
         }]
     }
 });

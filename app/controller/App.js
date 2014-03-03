@@ -16,9 +16,5 @@ Ext.define("CustomDataview.controller.App", {
                 }
             }
         }
-    },
-    
-    launch: function() {
-        console.log('Yahoo..');
     }
 });
