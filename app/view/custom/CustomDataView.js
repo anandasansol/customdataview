@@ -7,7 +7,7 @@
 Ext.define('CustomDataview.view.custom.CustomDataView', {
     extend: 'Ext.dataview.DataView',
     xtype: 'customdataview',
-    parentPanel: null,
+    parentPanel: null, // Adding parentPanel to config of 'customdataview'
     initialize: function() {
         this.callParent(arguments);
     },

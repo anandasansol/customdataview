@@ -11,14 +11,12 @@ Ext.define('CustomDataview.view.Main', {
         items: [{
             xtype: 'toolbar',
             title: 'Dataview without parent page scrolling',
-            height: 25
+            docked: 'top'
         }, {
             xtype: 'customdataview',
-            height: 200,
-            cls: 'number-btns-cont',
-            selectedCls: 'change-background',
             name: 'custom_dataview',
             itemTpl: '{text}',
+            height: 200,
             data: (function(){
                 var count, data = [];
                 for(count = 1; count <=25; count++) {
@@ -33,11 +31,8 @@ Ext.define('CustomDataview.view.Main', {
             height: 25
         }, {
             xtype: 'dataview',
-            height: 200,
-            cls: 'number-btns-cont',
-            selectedCls: 'change-background',
-            name: 'lorem_dataview',
             itemTpl: '{text}',
+            height: 200,
             data: (function(){
                 var count, data = [];
                 for(count = 1; count <=25; count++) {
