@@ -2,11 +2,10 @@ Ext.define('CustomDataview.view.Main', {
     extend: 'Ext.Container',
     xtype: 'main',
     requires: [
-    'Ext.TitleBar', 'Ext.data.Store'
+    'Ext.data.Store'
     ],
     config: {
         scrollable: true,
-        cls: 'main',
         name: 'main_container',
         items: [{
             xtype: 'toolbar',

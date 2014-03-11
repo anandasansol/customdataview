@@ -9,11 +9,8 @@ Ext.define("CustomDataview.controller.App", {
         control: {
             mainContainer: {
                 initialize: function() {
-                    var me = this;
-                    me.mainPanel = Ext.ComponentQuery.query('container[name="main_container"]')[0];
-                    
                     // Assigning the 'parentPanel' config of 'customdataview' with parent panel
-                    me.getCustomDataview().config.parentPanel = me.mainPanel; 
+                    this.getCustomDataview().config.parentPanel = this.getMainContainer(); 
                 }
             }
         }
