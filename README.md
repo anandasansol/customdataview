@@ -4,5 +4,8 @@ Customize your Sencha view by simply adding a 'config' whether it is dataview or
 
 Details
 =======
-Head into blog here: http://innofied.com/single-scrolled-parent-with-multiple-containers-in-sencha
+See the blog here: http://innofied.com/single-scrolled-parent-with-multiple-containers-in-sencha for details.
+
+
+
 

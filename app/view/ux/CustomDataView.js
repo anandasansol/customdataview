@@ -1,10 +1,10 @@
 /**
- * @class CustomDataview.view.custom.CustomDataView
- * @extends Ext.dataview.DataView
- * This class creates the custom dataviews, and lets them scroll without
- * scrolling the parent container.
- */
-Ext.define('CustomDataview.view.custom.CustomDataView', {
+* @class CustomDataview.view.ux.CustomDataView
+* @extends Ext.dataview.DataView
+* This class creates the custom dataviews, and lets them scroll without
+* scrolling the parent container.
+*/
+Ext.define('CustomDataview.view.ux.CustomDataView', {
     extend: 'Ext.dataview.DataView',
     xtype: 'customdataview',
     parentPanel: null, // Adding parentPanel to config of 'customdataview'

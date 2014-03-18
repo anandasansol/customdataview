@@ -19,7 +19,7 @@ Ext.application({
 
     views: [
         'Main',
-        'custom.CustomDataView'
+        'ux.CustomDataView'
     ],
     
     controllers: [
